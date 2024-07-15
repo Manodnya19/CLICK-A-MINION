@@ -1,0 +1,163 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0
+}
+
+
+.mole-visible {
+  font-size: 50px;
+  cursor: pointer;.minion-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20rem;
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 0.625rem;
+    perspective: 1000px; /* Enable 3D space for the flip effect */
+  }
+  
+  .content {
+    margin-left: 28.125rem;
+    margin-right: 28.125rem;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+    background-color: #4D7295;
+    border-radius: 8px;
+  }
+  
+  .minion {
+    width: 6.25rem;
+    height: 6.25rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin: 0.625rem;
+    background-color: rgba(0, 0, 0, 0.852);
+    transform-style: preserve-3d; /* Ensure children elements can be transformed */
+    transition: transform 0.6s ease; /* Smooth flip animation */
+  }
+  
+  .flipped .minion {
+    transform: rotateY(180deg); /* Rotate to show back side */
+  }
+  
+  .minion-visible {
+    width: 5.625rem;
+    height: 5.625rem;
+    position: relative;
+    display: flex;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .reset-button {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 0.6em;
+    height: 30px;
+    text-align: center;
+    color: yellow;
+    background-color: black;
+    border: 0.1px solid;
+    border-radius: 5px;
+    border-color: white;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  .reset-button:hover {
+    background-color: yellow;
+    color: #4D7295;
+  }
+  
+}
+.main-heading{
+  color: rgb(241, 241, 20);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 2px 2px #d0812d;
+
+}
+.score{
+  color: rgb(241, 241, 20);
+  text-shadow: 2px 2px #d0812d;
+}
+
+body{
+  margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(248, 248, 120);    
+}
+
+.minion-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20rem;
+  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 0.625rem;
+  
+}
+.content{
+  /* border: 1px solid; */
+  margin-left: 28.125rem;
+  margin-right: 28.125rem;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.7);
+  background-color: #4D7295;
+  border-radius: 8px;
+}
+
+
+.minion {
+  width: 6.25rem;
+  height: 6.25rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.852);
+  
+}
+
+.minion-visible {
+  width: 5.625rem; 
+  height: 5.625rem;
+  position: relative;
+  display: flex;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.reset-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 0.6em;
+  height: 30px;
+  text-align: center;
+  color: yellow;
+  background-color: black; 
+  border: 0.1px solid;
+  border-radius: 5px;
+  border-color: white;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.reset-button:hover {
+  background-color: yellow; 
+  color: #4D7295;
+}
+

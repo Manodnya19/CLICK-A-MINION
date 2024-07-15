@@ -1,0 +1,19 @@
+/* src/components/RunningMinion.css */
+@keyframes runAcross {
+    0% {
+      left: -100px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .running-minion {
+    position: fixed;
+    bottom: 20px;
+    left: -100px;
+    width: 100px;
+    height: auto;
+    animation: runAcross 3s linear infinite;
+  }
+  
