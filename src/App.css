@@ -84,6 +84,24 @@ body {
   color: #4D7295;
 }
 
+.level-up{
+  color: rgb(241, 241, 20);
+  text-shadow: 2px 2px #d0812d;
+}
+
+.level-up-button, .level-down-button{
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: black;
+  color: yellow;
+}
+.level-up-button:hover, .level-down-button:hover{
+  background-color: yellow;
+  color: black;
+}
+
 @media (max-width: 1200px) {
   .content {
     width: 50%;
